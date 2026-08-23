@@ -1,0 +1,6 @@
+{
+  "name": "AURA Luxury Resorts & Bespoke Escapes",
+  "description": "A high-converting luxury hotel and resort booking platform with real-time availability, dynamic pricing, curated travel experiences, itinerary management, and an AI luxury concierge.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
