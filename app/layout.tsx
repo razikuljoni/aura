@@ -24,7 +24,7 @@ const plusJakarta = Plus_Jakarta_Sans({
   display: 'swap',
 });
 
-const baseUrl = process.env.APP_URL ? new URL(process.env.APP_URL) : new URL('https://aura-escapes.vercel.app');
+const baseUrl = process.env.APP_URL ? new URL(process.env.APP_URL) : new URL('https://aura-self-beta.vercel.app');
 
 export const metadata: Metadata = {
   metadataBase: baseUrl,

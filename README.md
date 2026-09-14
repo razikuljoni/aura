@@ -1,5 +1,6 @@
 # AURA — Luxury Resorts & Bespoke Escapes
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-aura--self--beta.vercel.app-gold?style=for-the-badge&logo=vercel)](https://aura-self-beta.vercel.app)
 [![Next.js 15](https://img.shields.io/badge/Next.js-15.5-black?logo=next.js)](https://nextjs.org/)
 [![React 19](https://img.shields.io/badge/React-19.2-blue?logo=react)](https://react.dev/)
 [![TypeScript 5](https://img.shields.io/badge/TypeScript-5.9-blue?logo=typescript)](https://www.typescriptlang.org/)
@@ -8,6 +9,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 AURA is an ultra-luxury hotel and resort booking platform featuring real-time availability search, dynamic pricing calculations, multi-currency conversion, bespoke itineraries, and an AI Luxury Travel Concierge powered by Google Gemini 3.7 Flash.
+
+**🌐 Live Production**: [https://aura-self-beta.vercel.app](https://aura-self-beta.vercel.app)
 
 ---
 

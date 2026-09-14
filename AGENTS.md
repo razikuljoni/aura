@@ -22,9 +22,10 @@ Next.js 15 (App Router) luxury resort booking platform with property search/filt
 - `lib/types.ts`: TypeScript types (`Property`, `CuratedExperience`, `Booking`, `SearchFilterState`, `UserProfile`).
 
 ## Environment & Build Quirks
+- **Live Deployment**: `https://aura-self-beta.vercel.app` (Vercel auto-deploy on `main` push)
 - **Environment Variables**:
   - `GEMINI_API_KEY`: Required for `/api/concierge`. Falls back to default response if key is missing or invalid.
-  - `APP_URL`: Service URL used in Cloud Run environment.
+  - `APP_URL`: Service URL (`https://aura-self-beta.vercel.app` in production).
   - `DISABLE_HMR`: When set to `'true'`, disables HMR watch options in `next.config.ts` (prevents flicker during AI Studio edits).
 - **Next.js Config (`next.config.ts`)**:
   - `eslint.ignoreDuringBuilds: true` - ESLint skipped during `npm run build`; run `npm run lint` explicitly.
