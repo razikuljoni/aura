@@ -162,7 +162,7 @@ export const SearchBar = () => {
 
           {/* Destination Dropdown Popover */}
           {destinationOpen && (
-            <div className="absolute top-full left-0 mt-2 w-full sm:w-96 bg-neutral-900 border border-amber-500/30 rounded-2xl shadow-2xl p-4 z-50 animate-fadeIn backdrop-blur-2xl">
+            <div className="absolute top-full left-0 right-0 sm:right-auto mt-2 w-full sm:w-96 max-w-[calc(100vw-2rem)] bg-neutral-900 border border-amber-500/30 rounded-2xl shadow-2xl p-4 z-50 animate-fadeIn backdrop-blur-2xl">
               <div className="flex items-center justify-between pb-3 border-b border-white/10 mb-3">
                 <span className="text-xs font-mono tracking-wider uppercase text-amber-300">
                   Select Luxury Destination
@@ -256,7 +256,7 @@ export const SearchBar = () => {
 
           {/* Dates Popover */}
           {datesOpen && (
-            <div className="absolute top-full left-0 mt-2 w-full sm:w-80 bg-neutral-900 border border-amber-500/30 rounded-2xl shadow-2xl p-4 z-50 animate-fadeIn backdrop-blur-2xl">
+            <div className="absolute top-full left-0 right-0 sm:right-auto mt-2 w-full sm:w-80 max-w-[calc(100vw-2rem)] bg-neutral-900 border border-amber-500/30 rounded-2xl shadow-2xl p-4 z-50 animate-fadeIn backdrop-blur-2xl">
               <div className="flex items-center justify-between pb-3 border-b border-white/10 mb-4">
                 <span className="text-xs font-mono tracking-wider uppercase text-amber-300">
                   Select Check-in & Check-out
@@ -358,7 +358,7 @@ export const SearchBar = () => {
 
           {/* Guests Popover */}
           {guestsOpen && (
-            <div className="absolute top-full right-0 mt-2 w-72 bg-neutral-900 border border-amber-500/30 rounded-2xl shadow-2xl p-4 z-50 animate-fadeIn backdrop-blur-2xl">
+            <div className="absolute top-full left-0 right-0 sm:right-0 sm:left-auto mt-2 w-full sm:w-72 max-w-[calc(100vw-2rem)] bg-neutral-900 border border-amber-500/30 rounded-2xl shadow-2xl p-4 z-50 animate-fadeIn backdrop-blur-2xl">
               <div className="flex items-center justify-between pb-3 border-b border-white/10 mb-3">
                 <span className="text-xs font-mono tracking-wider uppercase text-amber-300">
                   Guests & Suites

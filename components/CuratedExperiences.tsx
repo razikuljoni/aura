@@ -171,7 +171,7 @@ export const CuratedExperiences = () => {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 xs:grid-cols-2 gap-2.5">
                   <button
                     onClick={() => setSelectedExperienceForDetail(currentExp)}
                     id={`exp-details-${currentExp.id}`}

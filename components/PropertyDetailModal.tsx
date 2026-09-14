@@ -256,7 +256,7 @@ export const PropertyDetailModal = () => {
               {/* Sub-Rating Breakdown */}
               <div className="p-6 rounded-2xl bg-neutral-900/70 border border-white/10">
                 <h4 className="font-serif text-lg text-white mb-4">Guest Satisfaction Audit</h4>
-                <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
+                <div className="grid grid-cols-2 sm:grid-cols-5 gap-2 sm:gap-4">
                   {Object.entries(property.subRatings).map(([key, score]) => (
                     <div key={key} className="text-center p-2 rounded-xl bg-neutral-950 border border-white/5">
                       <span className="block text-sm font-mono font-bold text-amber-300">{score.toFixed(1)}</span>

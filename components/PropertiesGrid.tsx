@@ -205,7 +205,7 @@ export const PropertiesGrid = () => {
                 <span className="block text-xs font-mono uppercase text-neutral-400 mb-3">
                   Signature Amenities
                 </span>
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5">
+                <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-2.5">
                   {AMENITIES_FILTER_OPTIONS.map((amenity) => {
                     const selected = searchState.amenities.includes(amenity);
                     return (

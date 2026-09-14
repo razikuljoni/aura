@@ -215,28 +215,33 @@ export const BookingCheckoutModal = () => {
           </div>
 
           {currentStep < 4 && (
-            <div className="hidden sm:flex items-center gap-3">
-              {[
-                { num: 1, label: 'Customization' },
-                { num: 2, label: 'Guest Details' },
-                { num: 3, label: 'Payment' }
-              ].map((step) => (
-                <div key={step.num} className="flex items-center gap-1.5 text-xs font-mono">
-                  <span className={`w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold ${
-                    currentStep === step.num 
-                      ? 'bg-amber-400 text-neutral-950' 
-                      : currentStep > step.num 
-                        ? 'bg-emerald-500 text-black' 
-                        : 'bg-neutral-800 text-neutral-400'
-                  }`}>
-                    {currentStep > step.num ? '✓' : step.num}
-                  </span>
-                  <span className={currentStep === step.num ? 'text-white' : 'text-neutral-500'}>
-                    {step.label}
-                  </span>
-                </div>
-              ))}
-            </div>
+            <>
+              <div className="hidden sm:flex items-center gap-3">
+                {[
+                  { num: 1, label: 'Customization' },
+                  { num: 2, label: 'Guest Details' },
+                  { num: 3, label: 'Payment' }
+                ].map((step) => (
+                  <div key={step.num} className="flex items-center gap-1.5 text-xs font-mono">
+                    <span className={`w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold ${
+                      currentStep === step.num 
+                        ? 'bg-amber-400 text-neutral-950' 
+                        : currentStep > step.num 
+                          ? 'bg-emerald-500 text-black' 
+                          : 'bg-neutral-800 text-neutral-400'
+                    }`}>
+                      {currentStep > step.num ? '✓' : step.num}
+                    </span>
+                    <span className={currentStep === step.num ? 'text-white' : 'text-neutral-500'}>
+                      {step.label}
+                    </span>
+                  </div>
+                ))}
+              </div>
+              <div className="sm:hidden text-xs font-mono text-amber-300 font-semibold">
+                Step {currentStep}/3
+              </div>
+            </>
           )}
 
           <button

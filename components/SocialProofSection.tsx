@@ -24,7 +24,7 @@ export const SocialProofSection = () => {
         
         {/* Press Badges Bar */}
         <div className="text-center mb-16">
-          <span className="text-[11px] font-mono uppercase tracking-[0.3em] text-amber-300/80 block mb-6">
+          <span className="text-[10px] sm:text-[11px] font-mono uppercase tracking-[0.2em] sm:tracking-[0.3em] text-amber-300/80 block mb-6 px-2">
             Recognized by the World’s Foremost Luxury Travel Authorities
           </span>
 
@@ -51,7 +51,7 @@ export const SocialProofSection = () => {
         </div>
 
         {/* Global Statistics Bar */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 py-8 px-6 rounded-3xl bg-gradient-to-r from-neutral-900 via-neutral-900/90 to-neutral-900 border border-amber-500/20">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 py-6 sm:py-8 px-4 sm:px-6 rounded-3xl bg-gradient-to-r from-neutral-900 via-neutral-900/90 to-neutral-900 border border-amber-500/20">
           {GLOBAL_STATS.map((stat, idx) => (
             <div key={idx} className="text-center sm:text-left">
               <span className="font-mono text-2xl sm:text-4xl font-bold text-amber-300 block mb-1">

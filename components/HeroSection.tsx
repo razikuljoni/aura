@@ -156,7 +156,7 @@ export const HeroSection = () => {
         </div>
 
         {/* Grand Headline */}
-        <h1 className="font-serif text-3xl sm:text-5xl lg:text-7xl font-normal tracking-tight text-white max-w-5xl mx-auto leading-[1.1] mb-6 drop-shadow-2xl">
+        <h1 className="font-serif text-2xl sm:text-5xl lg:text-7xl font-normal tracking-tight text-white max-w-5xl mx-auto leading-[1.15] sm:leading-[1.1] mb-4 sm:mb-6 drop-shadow-2xl">
           Where Timeless Luxury Meets <span className="italic font-light text-amber-200">Untold Escapes</span>
         </h1>
 
@@ -192,8 +192,8 @@ export const HeroSection = () => {
       </div>
 
       {/* Bottom Trust & Accreditations Bar */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 py-4 px-6 rounded-2xl bg-neutral-950/60 border border-white/10 backdrop-blur-md">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-6 sm:pt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 py-3 sm:py-4 px-4 sm:px-6 rounded-2xl bg-neutral-950/60 border border-white/10 backdrop-blur-md">
           
           <div className="flex items-center gap-3">
             <div className="w-9 h-9 rounded-xl bg-amber-500/10 border border-amber-400/30 flex items-center justify-center text-amber-400 shrink-0">

@@ -239,23 +239,23 @@ export const Navbar = () => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-neutral-950/95 border-b border-amber-500/20 px-6 py-6 space-y-4 backdrop-blur-xl animate-fadeIn">
-          <nav className="flex flex-col gap-4 text-sm font-light tracking-widest uppercase text-neutral-300">
+        <div className="lg:hidden bg-neutral-950/95 border-b border-amber-500/20 px-4 sm:px-6 py-6 space-y-4 backdrop-blur-xl animate-fadeIn max-h-[85vh] overflow-y-auto">
+          <nav className="flex flex-col gap-3 text-xs sm:text-sm font-light tracking-widest uppercase text-neutral-300">
             <button 
               onClick={() => scrollToSection('sanctuaries-section')}
-              className="text-left py-2 hover:text-amber-300 border-b border-white/5"
+              className="text-left py-2.5 hover:text-amber-300 border-b border-white/5"
             >
               Sanctuaries
             </button>
             <button 
               onClick={() => scrollToSection('curated-experiences-section')}
-              className="text-left py-2 hover:text-amber-300 border-b border-white/5"
+              className="text-left py-2.5 hover:text-amber-300 border-b border-white/5"
             >
               Curated Journeys
             </button>
             <button 
               onClick={() => scrollToSection('destinations-section')}
-              className="text-left py-2 hover:text-amber-300 border-b border-white/5"
+              className="text-left py-2.5 hover:text-amber-300 border-b border-white/5"
             >
               Destinations
             </button>
@@ -265,10 +265,10 @@ export const Navbar = () => {
                 setActivePortalTab('membership');
                 setAccountPortalOpen(true);
               }}
-              className="text-left py-2 text-amber-300 flex items-center justify-between border-b border-white/5"
+              className="text-left py-2.5 text-amber-300 flex items-center justify-between border-b border-white/5"
             >
               <span>AURA Privé Club</span>
-              <span className="text-[10px] px-2 py-0.5 rounded bg-amber-500/20 border border-amber-400/40 text-amber-300">
+              <span className="text-[10px] px-2 py-0.5 rounded bg-amber-500/20 border border-amber-400/40 text-amber-300 font-mono">
                 34,250 Pts
               </span>
             </button>
@@ -277,10 +277,30 @@ export const Navbar = () => {
                 setMobileMenuOpen(false);
                 setAiConciergeOpen(true);
               }}
-              className="text-left py-2 text-amber-400 flex items-center gap-2"
+              className="text-left py-2.5 text-amber-400 flex items-center gap-2 border-b border-white/5"
             >
               <Sparkles className="w-4 h-4" />
               <span>Ask AI Luxury Concierge</span>
+            </button>
+            
+            {/* Mobile Member Profile Link */}
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                setActivePortalTab('preferences');
+                setAccountPortalOpen(true);
+              }}
+              className="text-left py-2.5 text-neutral-200 flex items-center justify-between"
+            >
+              <div className="flex items-center gap-2">
+                <img 
+                  src={userProfile.avatarUrl} 
+                  alt={userProfile.name} 
+                  className="w-5 h-5 rounded-full object-cover border border-amber-400/50"
+                />
+                <span className="normal-case font-medium">{userProfile.name}</span>
+              </div>
+              <span className="text-[10px] text-amber-400 font-serif">Black Elite</span>
             </button>
           </nav>
         </div>

@@ -2,17 +2,7 @@
 
 import React, { useState } from 'react';
 import { useBooking } from '@/lib/booking-store';
-import { 
-  Sparkles, 
-  Phone, 
-  Mail, 
-  MapPin, 
-  ShieldCheck, 
-  Award, 
-  Check, 
-  ArrowRight, 
-  Globe 
-} from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 
 export const Footer = () => {
   const { currency, setCurrency, setAiConciergeOpen } = useBooking();
@@ -48,18 +38,18 @@ export const Footer = () => {
             </p>
 
             <form onSubmit={handleSubscribe} className="max-w-md">
-              <div className="flex gap-2">
+              <div className="flex flex-col xs:flex-row gap-2">
                 <input
                   type="email"
                   value={newsletterEmail}
                   onChange={(e) => setNewsletterEmail(e.target.value)}
                   placeholder="Enter your VIP email address..."
-                  className="flex-1 bg-neutral-900 border border-white/15 rounded-xl px-4 py-2.5 text-xs text-white placeholder-neutral-500 focus:outline-none focus:border-amber-400"
+                  className="flex-1 min-w-0 bg-neutral-900 border border-white/15 rounded-xl px-4 py-2.5 text-xs text-white placeholder-neutral-500 focus:outline-none focus:border-amber-400"
                   required
                 />
                 <button
                   type="submit"
-                  className="px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-neutral-950 text-xs font-semibold uppercase tracking-wider transition-colors"
+                  className="px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-neutral-950 text-xs font-semibold uppercase tracking-wider transition-colors shrink-0 whitespace-nowrap"
                 >
                   Join Guild
                 </button>
@@ -117,13 +107,14 @@ export const Footer = () => {
         </div>
 
         {/* Bottom Legal & Accreditations */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-500 font-light">
-          <div className="flex items-center gap-4">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-500 font-light text-center sm:text-left">
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2 sm:gap-4">
             <span>© 2026 AURA Luxury Resorts & Bespoke Escapes Ltd.</span>
+            <span className="hidden sm:inline">•</span>
             <span>All rights reserved.</span>
           </div>
 
-          <div className="flex items-center gap-6 text-[11px] font-mono">
+          <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 text-[11px] font-mono">
             <span className="hover:text-neutral-300 cursor-pointer">Discreet Privacy Charter</span>
             <span className="hover:text-neutral-300 cursor-pointer">Butler Guild Standards</span>
             <span className="hover:text-neutral-300 cursor-pointer">Terms of Bespoke Escapes</span>

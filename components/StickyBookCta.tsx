@@ -58,7 +58,7 @@ export const StickyBookCta = () => {
   };
 
   return (
-    <div className="fixed bottom-4 left-4 right-4 sm:left-1/2 sm:-translate-x-1/2 sm:w-auto sm:min-w-[640px] z-40 animate-slideUp">
+    <div className="fixed bottom-4 left-4 right-4 sm:left-1/2 sm:-translate-x-1/2 sm:w-auto max-w-full sm:min-w-[500px] md:min-w-[640px] z-40 animate-slideUp">
       <div className="p-3 sm:px-6 sm:py-3.5 rounded-2xl bg-neutral-950/95 border border-amber-500/40 backdrop-blur-2xl shadow-2xl shadow-black flex items-center justify-between gap-4 text-white">
         
         {/* Left summary */}
